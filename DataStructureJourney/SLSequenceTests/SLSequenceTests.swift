@@ -160,4 +160,19 @@ final class SLSequenceTests: XCTestCase {
         
         XCTAssertTrue(result == false)
     }
+    
+    func testCapacityUpTo64AndResizeDownTo4() {
+        //5 + 30 = 35 > 2^5 -> capacity = 2^6
+        for i in 0..<30 {
+            array.push(.init(i))
+        }
+        
+        XCTAssertEqual(array.capacity, 64)
+        
+        for _ in 0..<30 {
+            _ = array.pop()
+        }
+        
+        XCTAssertEqual(array.capacity, 16)
+    }
 }

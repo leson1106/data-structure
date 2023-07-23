@@ -18,6 +18,8 @@ public struct SLArray<Item: SLArrayItem> {
     private var elements: [Item] = []
     
     private let minimumCapacity: Int = 2
+    private let shrinkCapacityCondition: Int = 4
+    private let growCapacityCondition: Int = 2
     
     private var _size: Int = 0
     
@@ -29,10 +31,10 @@ public struct SLArray<Item: SLArrayItem> {
         _size = items.count
         resizeUp()
         
-        self.elements = [Item](repeating: .init(nil), count: _size)
+        elements = [Item](repeating: .init(nil), count: _size)
         
         for i in 0..<_size {
-            self.elements[i] = items[i]
+            elements[i] = items[i]
         }
     }
     
@@ -137,19 +139,27 @@ public struct SLArray<Item: SLArrayItem> {
         }
         return false
     }
+    
+    ///Remove all elements
+    public mutating func removeAll() {
+        let emptyArray: SLArray<Item> = .init([])
+        elements = emptyArray.elements
+        _size = 0
+        _capacity = minimumCapacity
+    }
 }
 
 private extension SLArray {
     ///Reach capacity, resize to double of size
     mutating func resizeUp() {
         while self._capacity <= self._size {
-            self._capacity = self._capacity * 2
+            self._capacity = self._capacity * growCapacityCondition
         }
     }
     
     ///Popping/removing an item, if size equatl to 1/4 capacity, resize to half
     mutating func resizeDown() {
-        guard _size <= (_capacity / 4) else { return }
+        guard _size <= (_capacity / shrinkCapacityCondition) else { return }
         
         self._capacity = max(minimumCapacity, _capacity / 2)
     }
