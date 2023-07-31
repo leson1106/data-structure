@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let vc = SequenceMockViewController()
+        let vc = CircularQueueMockViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         
