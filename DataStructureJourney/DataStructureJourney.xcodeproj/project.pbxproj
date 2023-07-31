@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2268C7112A7750DC00851397 /* QueueMockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268C7102A7750DC00851397 /* QueueMockViewController.swift */; };
 		226CDA742A6D1759004F3A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CDA732A6D1759004F3A77 /* AppDelegate.swift */; };
 		226CDA782A6D1759004F3A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CDA772A6D1759004F3A77 /* ViewController.swift */; };
 		226CDA7B2A6D1759004F3A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226CDA792A6D1759004F3A77 /* Main.storyboard */; };
@@ -19,6 +20,13 @@
 		226CDAA12A6D178A004F3A77 /* SLSequence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226CDA8C2A6D1789004F3A77 /* SLSequence.framework */; };
 		226CDAA22A6D178A004F3A77 /* SLSequence.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 226CDA8C2A6D1789004F3A77 /* SLSequence.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		226CDAAB2A6D17A7004F3A77 /* SLArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CDAAA2A6D17A7004F3A77 /* SLArray.swift */; };
+		2287A35B2A76BB27004837F9 /* SLQueue.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2287A35A2A76BB27004837F9 /* SLQueue.docc */; };
+		2287A3612A76BB27004837F9 /* SLQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2287A3572A76BB27004837F9 /* SLQueue.framework */; };
+		2287A3682A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287A3672A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift */; };
+		2287A3692A76BB27004837F9 /* SLQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2287A3592A76BB27004837F9 /* SLQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2287A36C2A76BB27004837F9 /* SLQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2287A3572A76BB27004837F9 /* SLQueue.framework */; };
+		2287A36D2A76BB27004837F9 /* SLQueue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2287A3572A76BB27004837F9 /* SLQueue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2287A3742A76BB99004837F9 /* SLQueueWithLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,27 @@
 			remoteGlobalIDString = 226CDA8B2A6D1789004F3A77;
 			remoteInfo = SLSequence;
 		};
+		2287A3622A76BB27004837F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226CDA682A6D1759004F3A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2287A3562A76BB27004837F9;
+			remoteInfo = SLQueue;
+		};
+		2287A3642A76BB27004837F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226CDA682A6D1759004F3A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226CDA6F2A6D1759004F3A77;
+			remoteInfo = DataStructureJourney;
+		};
+		2287A36A2A76BB27004837F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226CDA682A6D1759004F3A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2287A3562A76BB27004837F9;
+			remoteInfo = SLQueue;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +82,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				226CDAA22A6D178A004F3A77 /* SLSequence.framework in Embed Frameworks */,
+				2287A36D2A76BB27004837F9 /* SLQueue.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2268C7102A7750DC00851397 /* QueueMockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueMockViewController.swift; sourceTree = "<group>"; };
 		226CDA702A6D1759004F3A77 /* DataStructureJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructureJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226CDA732A6D1759004F3A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		226CDA772A6D1759004F3A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +104,12 @@
 		226CDA952A6D178A004F3A77 /* SLSequenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLSequenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		226CDA9C2A6D178A004F3A77 /* SLSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLSequenceTests.swift; sourceTree = "<group>"; };
 		226CDAAA2A6D17A7004F3A77 /* SLArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLArray.swift; sourceTree = "<group>"; };
+		2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLQueueWithLinkedList.swift; sourceTree = "<group>"; };
+		2287A3572A76BB27004837F9 /* SLQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2287A3592A76BB27004837F9 /* SLQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLQueue.h; sourceTree = "<group>"; };
+		2287A35A2A76BB27004837F9 /* SLQueue.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SLQueue.docc; sourceTree = "<group>"; };
+		2287A3602A76BB27004837F9 /* SLQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2287A3672A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLQueueTestsWithLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				226CDAA12A6D178A004F3A77 /* SLSequence.framework in Frameworks */,
+				2287A36C2A76BB27004837F9 /* SLQueue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +137,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2287A3542A76BB27004837F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2287A35D2A76BB27004837F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2287A3612A76BB27004837F9 /* SLQueue.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +161,9 @@
 				226CDA722A6D1759004F3A77 /* DataStructureJourney */,
 				226CDA8D2A6D1789004F3A77 /* SLSequence */,
 				226CDA9B2A6D178A004F3A77 /* SLSequenceTests */,
+				2287A34C2A76BB1B004837F9 /* SLQueue */,
+				2287A3582A76BB27004837F9 /* SLQueue */,
+				2287A3662A76BB27004837F9 /* SLQueueTests */,
 				226CDA712A6D1759004F3A77 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +174,8 @@
 				226CDA702A6D1759004F3A77 /* DataStructureJourney.app */,
 				226CDA8C2A6D1789004F3A77 /* SLSequence.framework */,
 				226CDA952A6D178A004F3A77 /* SLSequenceTests.xctest */,
+				2287A3572A76BB27004837F9 /* SLQueue.framework */,
+				2287A3602A76BB27004837F9 /* SLQueueTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +185,7 @@
 			children = (
 				226CDA732A6D1759004F3A77 /* AppDelegate.swift */,
 				226CDA772A6D1759004F3A77 /* ViewController.swift */,
+				2268C7102A7750DC00851397 /* QueueMockViewController.swift */,
 				226CDA792A6D1759004F3A77 /* Main.storyboard */,
 				226CDA7C2A6D175A004F3A77 /* Assets.xcassets */,
 				226CDA7E2A6D175A004F3A77 /* LaunchScreen.storyboard */,
@@ -153,6 +212,31 @@
 			path = SLSequenceTests;
 			sourceTree = "<group>";
 		};
+		2287A34C2A76BB1B004837F9 /* SLQueue */ = {
+			isa = PBXGroup;
+			children = (
+				2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */,
+			);
+			path = SLQueue;
+			sourceTree = "<group>";
+		};
+		2287A3582A76BB27004837F9 /* SLQueue */ = {
+			isa = PBXGroup;
+			children = (
+				2287A3592A76BB27004837F9 /* SLQueue.h */,
+				2287A35A2A76BB27004837F9 /* SLQueue.docc */,
+			);
+			path = SLQueue;
+			sourceTree = "<group>";
+		};
+		2287A3662A76BB27004837F9 /* SLQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				2287A3672A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift */,
+			);
+			path = SLQueueTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -161,6 +245,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				226CDA9E2A6D178A004F3A77 /* SLSequence.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2287A3522A76BB27004837F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2287A3692A76BB27004837F9 /* SLQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +272,7 @@
 			);
 			dependencies = (
 				226CDAA02A6D178A004F3A77 /* PBXTargetDependency */,
+				2287A36B2A76BB27004837F9 /* PBXTargetDependency */,
 			);
 			name = DataStructureJourney;
 			productName = DataStructureJourney;
@@ -223,6 +316,43 @@
 			productReference = 226CDA952A6D178A004F3A77 /* SLSequenceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2287A3562A76BB27004837F9 /* SLQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2287A36E2A76BB27004837F9 /* Build configuration list for PBXNativeTarget "SLQueue" */;
+			buildPhases = (
+				2287A3522A76BB27004837F9 /* Headers */,
+				2287A3532A76BB27004837F9 /* Sources */,
+				2287A3542A76BB27004837F9 /* Frameworks */,
+				2287A3552A76BB27004837F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLQueue;
+			productName = SLQueue;
+			productReference = 2287A3572A76BB27004837F9 /* SLQueue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2287A35F2A76BB27004837F9 /* SLQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2287A3712A76BB27004837F9 /* Build configuration list for PBXNativeTarget "SLQueueTests" */;
+			buildPhases = (
+				2287A35C2A76BB27004837F9 /* Sources */,
+				2287A35D2A76BB27004837F9 /* Frameworks */,
+				2287A35E2A76BB27004837F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2287A3632A76BB27004837F9 /* PBXTargetDependency */,
+				2287A3652A76BB27004837F9 /* PBXTargetDependency */,
+			);
+			name = SLQueueTests;
+			productName = SLQueueTests;
+			productReference = 2287A3602A76BB27004837F9 /* SLQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,7 +360,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					226CDA6F2A6D1759004F3A77 = {
@@ -241,6 +371,13 @@
 					};
 					226CDA942A6D178A004F3A77 = {
 						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 226CDA6F2A6D1759004F3A77;
+					};
+					2287A3562A76BB27004837F9 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					2287A35F2A76BB27004837F9 = {
+						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 226CDA6F2A6D1759004F3A77;
 					};
 				};
@@ -261,6 +398,8 @@
 				226CDA6F2A6D1759004F3A77 /* DataStructureJourney */,
 				226CDA8B2A6D1789004F3A77 /* SLSequence */,
 				226CDA942A6D178A004F3A77 /* SLSequenceTests */,
+				2287A3562A76BB27004837F9 /* SLQueue */,
+				2287A35F2A76BB27004837F9 /* SLQueueTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +429,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2287A3552A76BB27004837F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2287A35E2A76BB27004837F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -297,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2268C7112A7750DC00851397 /* QueueMockViewController.swift in Sources */,
 				226CDA782A6D1759004F3A77 /* ViewController.swift in Sources */,
 				226CDA742A6D1759004F3A77 /* AppDelegate.swift in Sources */,
 			);
@@ -319,6 +473,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2287A3532A76BB27004837F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2287A35B2A76BB27004837F9 /* SLQueue.docc in Sources */,
+				2287A3742A76BB99004837F9 /* SLQueueWithLinkedList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2287A35C2A76BB27004837F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2287A3682A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -336,6 +507,21 @@
 			isa = PBXTargetDependency;
 			target = 226CDA8B2A6D1789004F3A77 /* SLSequence */;
 			targetProxy = 226CDA9F2A6D178A004F3A77 /* PBXContainerItemProxy */;
+		};
+		2287A3632A76BB27004837F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2287A3562A76BB27004837F9 /* SLQueue */;
+			targetProxy = 2287A3622A76BB27004837F9 /* PBXContainerItemProxy */;
+		};
+		2287A3652A76BB27004837F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 226CDA6F2A6D1759004F3A77 /* DataStructureJourney */;
+			targetProxy = 2287A3642A76BB27004837F9 /* PBXContainerItemProxy */;
+		};
+		2287A36B2A76BB27004837F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2287A3562A76BB27004837F9 /* SLQueue */;
+			targetProxy = 2287A36A2A76BB27004837F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,7 +595,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -463,7 +649,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -621,6 +807,102 @@
 			};
 			name = Release;
 		};
+		2287A36F2A76BB27004837F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sldatastructure.SLQueue;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2287A3702A76BB27004837F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sldatastructure.SLQueue;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2287A3722A76BB27004837F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sldatastructure.SLQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataStructureJourney.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DataStructureJourney";
+			};
+			name = Debug;
+		};
+		2287A3732A76BB27004837F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sldatastructure.SLQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataStructureJourney.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DataStructureJourney";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -656,6 +938,24 @@
 			buildConfigurations = (
 				226CDAA82A6D178A004F3A77 /* Debug */,
 				226CDAA92A6D178A004F3A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2287A36E2A76BB27004837F9 /* Build configuration list for PBXNativeTarget "SLQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2287A36F2A76BB27004837F9 /* Debug */,
+				2287A3702A76BB27004837F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2287A3712A76BB27004837F9 /* Build configuration list for PBXNativeTarget "SLQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2287A3722A76BB27004837F9 /* Debug */,
+				2287A3732A76BB27004837F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
