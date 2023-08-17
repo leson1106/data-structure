@@ -22,6 +22,13 @@
 		226CDAA12A6D178A004F3A77 /* SLSequence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226CDA8C2A6D1789004F3A77 /* SLSequence.framework */; };
 		226CDAA22A6D178A004F3A77 /* SLSequence.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 226CDA8C2A6D1789004F3A77 /* SLSequence.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		226CDAAB2A6D17A7004F3A77 /* SLArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CDAAA2A6D17A7004F3A77 /* SLArray.swift */; };
+		22799B152A8DA9540057C2C2 /* SLHashSet.docc in Sources */ = {isa = PBXBuildFile; fileRef = 22799B142A8DA9540057C2C2 /* SLHashSet.docc */; };
+		22799B1B2A8DA9540057C2C2 /* SLHashSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22799B112A8DA9540057C2C2 /* SLHashSet.framework */; };
+		22799B222A8DA9540057C2C2 /* SLHashSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22799B212A8DA9540057C2C2 /* SLHashSetTests.swift */; };
+		22799B232A8DA9540057C2C2 /* SLHashSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 22799B132A8DA9540057C2C2 /* SLHashSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22799B262A8DA9540057C2C2 /* SLHashSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22799B112A8DA9540057C2C2 /* SLHashSet.framework */; };
+		22799B272A8DA9540057C2C2 /* SLHashSet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22799B112A8DA9540057C2C2 /* SLHashSet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22799B2F2A8DA99C0057C2C2 /* SLHashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22799B2E2A8DA99C0057C2C2 /* SLHashSet.swift */; };
 		2287A35B2A76BB27004837F9 /* SLQueue.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2287A35A2A76BB27004837F9 /* SLQueue.docc */; };
 		2287A3612A76BB27004837F9 /* SLQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2287A3572A76BB27004837F9 /* SLQueue.framework */; };
 		2287A3682A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287A3672A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift */; };
@@ -53,6 +60,27 @@
 			remoteGlobalIDString = 226CDA8B2A6D1789004F3A77;
 			remoteInfo = SLSequence;
 		};
+		22799B1C2A8DA9540057C2C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226CDA682A6D1759004F3A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22799B102A8DA9540057C2C2;
+			remoteInfo = SLHashSet;
+		};
+		22799B1E2A8DA9540057C2C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226CDA682A6D1759004F3A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226CDA6F2A6D1759004F3A77;
+			remoteInfo = DataStructureJourney;
+		};
+		22799B242A8DA9540057C2C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226CDA682A6D1759004F3A77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22799B102A8DA9540057C2C2;
+			remoteInfo = SLHashSet;
+		};
 		2287A3622A76BB27004837F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 226CDA682A6D1759004F3A77 /* Project object */;
@@ -83,6 +111,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				22799B272A8DA9540057C2C2 /* SLHashSet.framework in Embed Frameworks */,
 				226CDAA22A6D178A004F3A77 /* SLSequence.framework in Embed Frameworks */,
 				2287A36D2A76BB27004837F9 /* SLQueue.framework in Embed Frameworks */,
 			);
@@ -108,6 +137,12 @@
 		226CDA952A6D178A004F3A77 /* SLSequenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLSequenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		226CDA9C2A6D178A004F3A77 /* SLSequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLSequenceTests.swift; sourceTree = "<group>"; };
 		226CDAAA2A6D17A7004F3A77 /* SLArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLArray.swift; sourceTree = "<group>"; };
+		22799B112A8DA9540057C2C2 /* SLHashSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLHashSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22799B132A8DA9540057C2C2 /* SLHashSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLHashSet.h; sourceTree = "<group>"; };
+		22799B142A8DA9540057C2C2 /* SLHashSet.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SLHashSet.docc; sourceTree = "<group>"; };
+		22799B1A2A8DA9540057C2C2 /* SLHashSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLHashSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22799B212A8DA9540057C2C2 /* SLHashSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLHashSetTests.swift; sourceTree = "<group>"; };
+		22799B2E2A8DA99C0057C2C2 /* SLHashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLHashSet.swift; sourceTree = "<group>"; };
 		2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLQueueWithLinkedList.swift; sourceTree = "<group>"; };
 		2287A3572A76BB27004837F9 /* SLQueue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2287A3592A76BB27004837F9 /* SLQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLQueue.h; sourceTree = "<group>"; };
@@ -121,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22799B262A8DA9540057C2C2 /* SLHashSet.framework in Frameworks */,
 				226CDAA12A6D178A004F3A77 /* SLSequence.framework in Frameworks */,
 				2287A36C2A76BB27004837F9 /* SLQueue.framework in Frameworks */,
 			);
@@ -138,6 +174,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				226CDA962A6D178A004F3A77 /* SLSequence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22799B0E2A8DA9540057C2C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22799B172A8DA9540057C2C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22799B1B2A8DA9540057C2C2 /* SLHashSet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,9 +216,10 @@
 				226CDA722A6D1759004F3A77 /* DataStructureJourney */,
 				226CDA8D2A6D1789004F3A77 /* SLSequence */,
 				226CDA9B2A6D178A004F3A77 /* SLSequenceTests */,
-				2287A34C2A76BB1B004837F9 /* SLQueue */,
 				2287A3582A76BB27004837F9 /* SLQueue */,
 				2287A3662A76BB27004837F9 /* SLQueueTests */,
+				22799B122A8DA9540057C2C2 /* SLHashSet */,
+				22799B202A8DA9540057C2C2 /* SLHashSetTests */,
 				226CDA712A6D1759004F3A77 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -180,6 +232,8 @@
 				226CDA952A6D178A004F3A77 /* SLSequenceTests.xctest */,
 				2287A3572A76BB27004837F9 /* SLQueue.framework */,
 				2287A3602A76BB27004837F9 /* SLQueueTests.xctest */,
+				22799B112A8DA9540057C2C2 /* SLHashSet.framework */,
+				22799B1A2A8DA9540057C2C2 /* SLHashSetTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,9 +256,9 @@
 		226CDA8D2A6D1789004F3A77 /* SLSequence */ = {
 			isa = PBXGroup;
 			children = (
+				226CDAAA2A6D17A7004F3A77 /* SLArray.swift */,
 				226CDA8E2A6D1789004F3A77 /* SLSequence.h */,
 				226CDA8F2A6D1789004F3A77 /* SLSequence.docc */,
-				226CDAAA2A6D17A7004F3A77 /* SLArray.swift */,
 			);
 			path = SLSequence;
 			sourceTree = "<group>";
@@ -217,18 +271,29 @@
 			path = SLSequenceTests;
 			sourceTree = "<group>";
 		};
-		2287A34C2A76BB1B004837F9 /* SLQueue */ = {
+		22799B122A8DA9540057C2C2 /* SLHashSet */ = {
 			isa = PBXGroup;
 			children = (
-				2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */,
-				226231B42A77CA6400BA2335 /* SLQueueWithArray.swift */,
+				22799B2E2A8DA99C0057C2C2 /* SLHashSet.swift */,
+				22799B132A8DA9540057C2C2 /* SLHashSet.h */,
+				22799B142A8DA9540057C2C2 /* SLHashSet.docc */,
 			);
-			path = SLQueue;
+			path = SLHashSet;
+			sourceTree = "<group>";
+		};
+		22799B202A8DA9540057C2C2 /* SLHashSetTests */ = {
+			isa = PBXGroup;
+			children = (
+				22799B212A8DA9540057C2C2 /* SLHashSetTests.swift */,
+			);
+			path = SLHashSetTests;
 			sourceTree = "<group>";
 		};
 		2287A3582A76BB27004837F9 /* SLQueue */ = {
 			isa = PBXGroup;
 			children = (
+				2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */,
+				226231B42A77CA6400BA2335 /* SLQueueWithArray.swift */,
 				2287A3592A76BB27004837F9 /* SLQueue.h */,
 				2287A35A2A76BB27004837F9 /* SLQueue.docc */,
 			);
@@ -251,6 +316,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				226CDA9E2A6D178A004F3A77 /* SLSequence.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22799B0C2A8DA9540057C2C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22799B232A8DA9540057C2C2 /* SLHashSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +352,7 @@
 			dependencies = (
 				226CDAA02A6D178A004F3A77 /* PBXTargetDependency */,
 				2287A36B2A76BB27004837F9 /* PBXTargetDependency */,
+				22799B252A8DA9540057C2C2 /* PBXTargetDependency */,
 			);
 			name = DataStructureJourney;
 			productName = DataStructureJourney;
@@ -320,6 +394,43 @@
 			name = SLSequenceTests;
 			productName = SLSequenceTests;
 			productReference = 226CDA952A6D178A004F3A77 /* SLSequenceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22799B102A8DA9540057C2C2 /* SLHashSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22799B2C2A8DA9550057C2C2 /* Build configuration list for PBXNativeTarget "SLHashSet" */;
+			buildPhases = (
+				22799B0C2A8DA9540057C2C2 /* Headers */,
+				22799B0D2A8DA9540057C2C2 /* Sources */,
+				22799B0E2A8DA9540057C2C2 /* Frameworks */,
+				22799B0F2A8DA9540057C2C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLHashSet;
+			productName = SLHashSet;
+			productReference = 22799B112A8DA9540057C2C2 /* SLHashSet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		22799B192A8DA9540057C2C2 /* SLHashSetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22799B2D2A8DA9550057C2C2 /* Build configuration list for PBXNativeTarget "SLHashSetTests" */;
+			buildPhases = (
+				22799B162A8DA9540057C2C2 /* Sources */,
+				22799B172A8DA9540057C2C2 /* Frameworks */,
+				22799B182A8DA9540057C2C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22799B1D2A8DA9540057C2C2 /* PBXTargetDependency */,
+				22799B1F2A8DA9540057C2C2 /* PBXTargetDependency */,
+			);
+			name = SLHashSetTests;
+			productName = SLHashSetTests;
+			productReference = 22799B1A2A8DA9540057C2C2 /* SLHashSetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2287A3562A76BB27004837F9 /* SLQueue */ = {
@@ -366,7 +477,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					226CDA6F2A6D1759004F3A77 = {
@@ -377,6 +488,13 @@
 					};
 					226CDA942A6D178A004F3A77 = {
 						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 226CDA6F2A6D1759004F3A77;
+					};
+					22799B102A8DA9540057C2C2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					22799B192A8DA9540057C2C2 = {
+						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 226CDA6F2A6D1759004F3A77;
 					};
 					2287A3562A76BB27004837F9 = {
@@ -406,6 +524,8 @@
 				226CDA942A6D178A004F3A77 /* SLSequenceTests */,
 				2287A3562A76BB27004837F9 /* SLQueue */,
 				2287A35F2A76BB27004837F9 /* SLQueueTests */,
+				22799B102A8DA9540057C2C2 /* SLHashSet */,
+				22799B192A8DA9540057C2C2 /* SLHashSetTests */,
 			);
 		};
 /* End PBXProject section */
@@ -429,6 +549,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		226CDA932A6D178A004F3A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22799B0F2A8DA9540057C2C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22799B182A8DA9540057C2C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,6 +614,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22799B0D2A8DA9540057C2C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22799B152A8DA9540057C2C2 /* SLHashSet.docc in Sources */,
+				22799B2F2A8DA99C0057C2C2 /* SLHashSet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22799B162A8DA9540057C2C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22799B222A8DA9540057C2C2 /* SLHashSetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2287A3532A76BB27004837F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,6 +666,21 @@
 			isa = PBXTargetDependency;
 			target = 226CDA8B2A6D1789004F3A77 /* SLSequence */;
 			targetProxy = 226CDA9F2A6D178A004F3A77 /* PBXContainerItemProxy */;
+		};
+		22799B1D2A8DA9540057C2C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22799B102A8DA9540057C2C2 /* SLHashSet */;
+			targetProxy = 22799B1C2A8DA9540057C2C2 /* PBXContainerItemProxy */;
+		};
+		22799B1F2A8DA9540057C2C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 226CDA6F2A6D1759004F3A77 /* DataStructureJourney */;
+			targetProxy = 22799B1E2A8DA9540057C2C2 /* PBXContainerItemProxy */;
+		};
+		22799B252A8DA9540057C2C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22799B102A8DA9540057C2C2 /* SLHashSet */;
+			targetProxy = 22799B242A8DA9540057C2C2 /* PBXContainerItemProxy */;
 		};
 		2287A3632A76BB27004837F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -815,6 +981,126 @@
 			};
 			name = Release;
 		};
+		22799B282A8DA9550057C2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sldatastructure.SLHashSet;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22799B292A8DA9550057C2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sldatastructure.SLHashSet;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22799B2A2A8DA9550057C2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sldatastructure.SLHashSetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataStructureJourney.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DataStructureJourney";
+			};
+			name = Debug;
+		};
+		22799B2B2A8DA9550057C2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sldatastructure.SLHashSetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataStructureJourney.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DataStructureJourney";
+			};
+			name = Release;
+		};
 		2287A36F2A76BB27004837F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -946,6 +1232,24 @@
 			buildConfigurations = (
 				226CDAA82A6D178A004F3A77 /* Debug */,
 				226CDAA92A6D178A004F3A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22799B2C2A8DA9550057C2C2 /* Build configuration list for PBXNativeTarget "SLHashSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22799B282A8DA9550057C2C2 /* Debug */,
+				22799B292A8DA9550057C2C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22799B2D2A8DA9550057C2C2 /* Build configuration list for PBXNativeTarget "SLHashSetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22799B2A2A8DA9550057C2C2 /* Debug */,
+				22799B2B2A8DA9550057C2C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
