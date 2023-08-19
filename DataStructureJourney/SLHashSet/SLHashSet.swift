@@ -35,7 +35,7 @@ public class SLHashSet {
 }
 
 private extension SLHashSet {
-    func hash(_ value: Int) -> Int {
-        value % size
+    func hash(_ key: Int) -> Int {
+        key % size
     }
 }

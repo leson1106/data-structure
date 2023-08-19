@@ -22,9 +22,6 @@ final class SLQueueTests: XCTestCase {
         queue.enqueue(value: 1)
         queue.enqueue(value: 2)
         
-        let array = Array(repeating: 0, count: 5)
-        
-        
         XCTAssertTrue(queue.size == 2)
     }
     
