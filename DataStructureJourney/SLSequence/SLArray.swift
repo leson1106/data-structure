@@ -39,6 +39,7 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Return item at index
+    ///Time complexity `O(1)`
     public func get(at index: Int) -> Item {
         guard index < _size else {
             fatalError("index out of range")
@@ -47,6 +48,7 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Push item to last
+    ///Time complexity `O(1)`
     public mutating func push(_ item: Item) {
         _size += 1
         resizeUp()
@@ -56,6 +58,7 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Insert an item at specific index
+    ///Time complexity `O(1)` for index at the end & `O(n)` otherwise
     public mutating func insert(_ item: Item, at index: Int) {
         guard index <= _size else {
             fatalError("index out of range")
@@ -75,11 +78,13 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Insert at index = 0
+    ///Time complexity `O(n)`
     public mutating func prepend(_ item: Item) {
         insert(item, at: 0)
     }
     
     ///Pop the last item
+    ///Time complexity `O(1)`
     public mutating func pop() -> Item? {
         guard _size > 0 else { return nil }
         
@@ -90,11 +95,13 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Delete item at index then shift all left items
+    ///Time complexity `O(n)` in worst case
     public mutating func delete(at index: Int) {
         guard index < _size else {
             fatalError("index out of range")
         }
         
+        ///Last element, just pop
         if index == _size - 1 {
             _ = pop()
             return
@@ -109,9 +116,8 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Looking for all matched item and remove it's indexes
-    ///Time O(n)
-    ///Space O(n)
-    ///Which n is current elements
+    ///Time complexity`O(n)` Which n is current elements
+    ///Space complexity `O(n)`
     public mutating func remove(_ item: Item) {
         var found: Int = 0
         var i = 0
@@ -133,6 +139,7 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Check if array contains item
+    ///Time complexity `O(n)`
     public func find(_ item: Item) -> Bool {
         for i in 0..<_size where item.value == elements[i].value {
             return true
@@ -141,11 +148,11 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Remove all elements
-    public mutating func removeAll() {
+    public mutating func removeAll(_ keepingCapacity: false) {
         let emptyArray: SLArray<Item> = .init([])
         elements = emptyArray.elements
         _size = 0
-        _capacity = minimumCapacity
+        _capacity = keepingCapacity ? _capacity : minimumCapacity
     }
 }
 
