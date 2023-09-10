@@ -148,7 +148,7 @@ public struct SLArray<Item: SLArrayItem> {
     }
     
     ///Remove all elements
-    public mutating func removeAll(_ keepingCapacity: false) {
+    public mutating func removeAll(_ keepingCapacity: Bool = false) {
         let emptyArray: SLArray<Item> = .init([])
         elements = emptyArray.elements
         _size = 0
