@@ -1,5 +1,5 @@
 //
-//  SLSequenceTests.swift
+//  SLArrayTests.swift
 //  SLSequenceTests
 //
 //  Created by Son Le on 23/07/2023.
@@ -16,7 +16,7 @@ struct Mock: SLArrayItem {
     }
 }
 
-final class SLSequenceTests: XCTestCase {
+final class SLArrayTests: XCTestCase {
     
     private var array: SLArray<Mock> = .init([])
     
