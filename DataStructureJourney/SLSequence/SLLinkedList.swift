@@ -167,7 +167,17 @@ public class SLLinkedList {
     
     ///Time complexity `O(n)`
     public func reverse() {
+        var curr = head
+        var prev: SLNode?
+        var next: SLNode?
         
+        while curr != nil {
+            next = curr?.next
+            curr?.next = prev
+            prev = curr
+            curr = next
+        }
+        head = prev
     }
     
     ///Remove the first item in list with this value

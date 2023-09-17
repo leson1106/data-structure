@@ -190,4 +190,34 @@ final class SLLinkedListTests: XCTestCase {
         XCTAssertEqual(list.size, 4)
         XCTAssertEqual(list.popFront(), 2)
     }
+    
+    func testReverseList() {
+        let list = SLLinkedList()
+        list.pushBack(1)
+        list.pushBack(2)
+        list.pushBack(3)
+        list.pushBack(4)
+        list.reverse()
+        XCTAssertEqual(list.size, 4)
+        XCTAssertEqual(list.popBack(), 1)
+        XCTAssertEqual(list.popFront(), 4)
+    }
+    
+    func testReverseListWithSingleElement() {
+        let list = SLLinkedList()
+        list.pushBack(1)
+        list.reverse()
+        XCTAssertEqual(list.size, 1)
+        XCTAssertEqual(list.popBack(), 1)
+    }
+    
+    func testReverseListWithTwoElements() {
+        let list = SLLinkedList()
+        list.pushBack(1)
+        list.pushBack(2)
+        list.reverse()
+        XCTAssertEqual(list.size, 2)
+        XCTAssertEqual(list.popBack(), 1)
+        XCTAssertEqual(list.popFront(), 2)
+    }
 }
