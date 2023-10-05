@@ -50,6 +50,10 @@ class ViewController: UIViewController {
         print(memoAgeS)
         print(memoC)
         print(memoNoteInC)
+        
+        var numbers = [3,1,4,2]
+        numbers.quicksort()
+        print(numbers)
     }
 }
 

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		226231B52A77CA6400BA2335 /* SLQueueWithArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226231B42A77CA6400BA2335 /* SLQueueWithArray.swift */; };
-		226231B72A77CC1D00BA2335 /* CircularQueueMockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226231B62A77CC1D00BA2335 /* CircularQueueMockViewController.swift */; };
-		2268C7112A7750DC00851397 /* QueueMockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268C7102A7750DC00851397 /* QueueMockViewController.swift */; };
 		226CDA742A6D1759004F3A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CDA732A6D1759004F3A77 /* AppDelegate.swift */; };
 		226CDA782A6D1759004F3A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CDA772A6D1759004F3A77 /* ViewController.swift */; };
 		226CDA7B2A6D1759004F3A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226CDA792A6D1759004F3A77 /* Main.storyboard */; };
@@ -40,6 +38,7 @@
 		2287A36C2A76BB27004837F9 /* SLQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2287A3572A76BB27004837F9 /* SLQueue.framework */; };
 		2287A36D2A76BB27004837F9 /* SLQueue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2287A3572A76BB27004837F9 /* SLQueue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2287A3742A76BB99004837F9 /* SLQueueWithLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */; };
+		22F2E74A2ACE669000EF3574 /* WrapCSortAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F2E7492ACE669000EF3574 /* WrapCSortAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,8 +125,6 @@
 
 /* Begin PBXFileReference section */
 		226231B42A77CA6400BA2335 /* SLQueueWithArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLQueueWithArray.swift; sourceTree = "<group>"; };
-		226231B62A77CC1D00BA2335 /* CircularQueueMockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularQueueMockViewController.swift; sourceTree = "<group>"; };
-		2268C7102A7750DC00851397 /* QueueMockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueMockViewController.swift; sourceTree = "<group>"; };
 		226CDA702A6D1759004F3A77 /* DataStructureJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructureJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226CDA732A6D1759004F3A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		226CDA772A6D1759004F3A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +154,7 @@
 		2287A35A2A76BB27004837F9 /* SLQueue.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SLQueue.docc; sourceTree = "<group>"; };
 		2287A3602A76BB27004837F9 /* SLQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2287A3672A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLQueueTestsWithLinkedList.swift; sourceTree = "<group>"; };
+		22F2E7492ACE669000EF3574 /* WrapCSortAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapCSortAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,12 +249,11 @@
 			children = (
 				226CDA732A6D1759004F3A77 /* AppDelegate.swift */,
 				226CDA772A6D1759004F3A77 /* ViewController.swift */,
-				2268C7102A7750DC00851397 /* QueueMockViewController.swift */,
-				226231B62A77CC1D00BA2335 /* CircularQueueMockViewController.swift */,
 				226CDA792A6D1759004F3A77 /* Main.storyboard */,
 				226CDA7C2A6D175A004F3A77 /* Assets.xcassets */,
 				226CDA7E2A6D175A004F3A77 /* LaunchScreen.storyboard */,
 				226CDA812A6D175A004F3A77 /* Info.plist */,
+				22F2E7492ACE669000EF3574 /* WrapCSortAPI.swift */,
 			);
 			path = DataStructureJourney;
 			sourceTree = "<group>";
@@ -602,10 +599,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2268C7112A7750DC00851397 /* QueueMockViewController.swift in Sources */,
+				22F2E74A2ACE669000EF3574 /* WrapCSortAPI.swift in Sources */,
 				226CDA782A6D1759004F3A77 /* ViewController.swift in Sources */,
 				226CDA742A6D1759004F3A77 /* AppDelegate.swift in Sources */,
-				226231B72A77CC1D00BA2335 /* CircularQueueMockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
