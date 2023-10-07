@@ -31,14 +31,11 @@ final class SLHashMapTests: XCTestCase {
         XCTAssertEqual(val2, 2)
     }
     
-    func testHandleCollision() {
+    func testPutItemWithSameKey() {
         hashMap.put(1, 1)
         hashMap.put(1, 2)
         
         XCTAssertEqual(hashMap.get(1), 2)
-        
-        hashMap.remove(1)
-        XCTAssertEqual(hashMap.get(1), 1)
         
         hashMap.remove(1)
         XCTAssertEqual(hashMap.get(1), nil)

@@ -23,6 +23,7 @@ private class Node {
 public class SLHashMap {
     
     private let size = 19997
+    private let multipleConstant = 12582917
     private var table: [Node?]
     
     public init() {
@@ -30,6 +31,8 @@ public class SLHashMap {
     }
     
     func put(_ key: Int, _ value: Int) {
+        //Remove earlier instance of key to avoid chaining multiple versions of key in linked list
+        remove(key)
         let index = hash(key)
         let node = Node(key: key, val: value, next: table[index])
         table[index] = node
@@ -39,6 +42,7 @@ public class SLHashMap {
         let index = hash(key)
         var node = table[index]
         while node != nil {
+            //If collision, walk through linked list to find the key
             if node?.key == key {
                 return node!.val
             }
@@ -59,6 +63,7 @@ public class SLHashMap {
         if node?.key == key {
             table[index] = node?.next
         } else {
+            //If collision, walk through linked list to find the key
             while node?.next != nil {
                 if let nestedKey = node?.next?.key, nestedKey == key {
                     node?.next = node?.next?.next
@@ -72,6 +77,6 @@ public class SLHashMap {
 
 private extension SLHashMap {
     func hash(_ key: Int) -> Int {
-        return key * 12582917 % size
+        return key * multipleConstant % size
     }
 }
