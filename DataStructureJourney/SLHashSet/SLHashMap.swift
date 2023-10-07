@@ -30,13 +30,12 @@ public class SLHashMap {
     }
     
     func put(_ key: Int, _ value: Int) {
-        remove(key)
         let index = hash(key)
         let node = Node(key: key, val: value, next: table[index])
         table[index] = node
     }
     
-    func get(_ key: Int) -> Int {
+    func get(_ key: Int) -> Int? {
         let index = hash(key)
         var node = table[index]
         while node != nil {
@@ -45,7 +44,12 @@ public class SLHashMap {
             }
             node = node?.next
         }
-        return -1
+        return nil
+    }
+    
+    func exists(_ key: Int) -> Bool {
+        let val = get(key)
+        return val != nil
     }
     
     func remove(_ key: Int) {
@@ -68,6 +72,6 @@ public class SLHashMap {
 
 private extension SLHashMap {
     func hash(_ key: Int) -> Int {
-        return key * 12582917 & size
+        return key * 12582917 % size
     }
 }

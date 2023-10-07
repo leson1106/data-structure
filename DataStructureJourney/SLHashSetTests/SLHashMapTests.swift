@@ -31,11 +31,17 @@ final class SLHashMapTests: XCTestCase {
         XCTAssertEqual(val2, 2)
     }
     
-    func testPutSameKeyItemAndGetTheSecondValue() {
+    func testHandleCollision() {
         hashMap.put(1, 1)
         hashMap.put(1, 2)
         
         XCTAssertEqual(hashMap.get(1), 2)
+        
+        hashMap.remove(1)
+        XCTAssertEqual(hashMap.get(1), 1)
+        
+        hashMap.remove(1)
+        XCTAssertEqual(hashMap.get(1), nil)
     }
     
     func testRemoveWithEmptyMap() {
@@ -48,7 +54,14 @@ final class SLHashMapTests: XCTestCase {
         hashMap.put(1, 1)
         hashMap.remove(1)
         
-        XCTAssertEqual(hashMap.get(1), -1)
+        let final = hashMap.get(1)
+        XCTAssertNil(final)
+    }
+    
+    func testExistItemAndNonExistItem() {
+        hashMap.put(1, 1)
+        XCTAssertTrue(hashMap.exists(1))
+        XCTAssertFalse(hashMap.exists(2))
     }
     
     func testLeetCodeTestCase() {
@@ -63,7 +76,7 @@ final class SLHashMapTests: XCTestCase {
         hashMap.remove(2)
         let final = hashMap.get(2)
         
-        XCTAssertEqual(final, -1)
+        XCTAssertNil(final)
     }
     
     func testLeetCodeTestCase2() {
