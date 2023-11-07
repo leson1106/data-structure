@@ -39,6 +39,7 @@
 		2287A36C2A76BB27004837F9 /* SLQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2287A3572A76BB27004837F9 /* SLQueue.framework */; };
 		2287A36D2A76BB27004837F9 /* SLQueue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2287A3572A76BB27004837F9 /* SLQueue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2287A3742A76BB99004837F9 /* SLQueueWithLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */; };
+		22B950202AD6DDAF002DD774 /* SLHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9501F2AD6DDAF002DD774 /* SLHeap.swift */; };
 		22F2E74A2ACE669000EF3574 /* WrapCSortAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F2E7492ACE669000EF3574 /* WrapCSortAPI.swift */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +157,7 @@
 		2287A35A2A76BB27004837F9 /* SLQueue.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SLQueue.docc; sourceTree = "<group>"; };
 		2287A3602A76BB27004837F9 /* SLQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2287A3672A76BB27004837F9 /* SLQueueTestsWithLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLQueueTestsWithLinkedList.swift; sourceTree = "<group>"; };
+		22B9501F2AD6DDAF002DD774 /* SLHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLHeap.swift; sourceTree = "<group>"; };
 		22F2E7492ACE669000EF3574 /* WrapCSortAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapCSortAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -306,6 +308,7 @@
 			children = (
 				2287A34D2A76BB1B004837F9 /* SLQueueWithLinkedList.swift */,
 				226231B42A77CA6400BA2335 /* SLQueueWithArray.swift */,
+				22B9501F2AD6DDAF002DD774 /* SLHeap.swift */,
 				2287A3592A76BB27004837F9 /* SLQueue.h */,
 				2287A35A2A76BB27004837F9 /* SLQueue.docc */,
 			);
@@ -651,6 +654,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B950202AD6DDAF002DD774 /* SLHeap.swift in Sources */,
 				2287A35B2A76BB27004837F9 /* SLQueue.docc in Sources */,
 				2287A3742A76BB99004837F9 /* SLQueueWithLinkedList.swift in Sources */,
 				226231B52A77CA6400BA2335 /* SLQueueWithArray.swift in Sources */,
